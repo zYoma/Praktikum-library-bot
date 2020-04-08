@@ -21,7 +21,8 @@ def write_json(data, filename='answer.json'):
 # метод отправляет сообщение от имени бота
 def send_Message(chat_id, text):
     url = URL + 'sendMessage'
-    answer = {'chat_id': chat_id, 'text':text, 'parse_mode': 'HTML'}
+    kb_markup = {'resize_keyboard': True, 'keyboard':[[{'text': 'Каталог'},{'text': 'Поиск'}],[{'text': 'Добавить запись'},{'text': 'Все'}]]}
+    answer = {'chat_id': chat_id, 'text':text, 'reply_markup':kb_markup, 'parse_mode': 'HTML'}
     r =requests.post(url, json=answer)
     return r.json()
 
@@ -40,10 +41,20 @@ def main():
             chat_id = r['message']['chat']['id'] # получаем  id юзера, может не быть если бот например в канале или группе
         except:
             chat_id = None
-
-        username = r['message']['chat']['username'] # получаем имя пользователя
-        text = 'Привет <b>{}</b>, я готов к работе с API'.format(username)
         if chat_id:
+            message = r['message']['text']
+            username = r['message']['chat']['username'] # получаем имя пользователя
+            if re.search(r'Каталог', message):
+                text = 'Ребята еще не написали сайт!'
+            elif re.search(r'Поиск', message):
+                text = 'Искать негде, ждем пока мне API подключат!'
+            elif re.search(r'Добавить запись', message):
+                text = 'У меня очень короткая память, а сохранить некуда('
+            elif re.search(r'Все', message):
+                text = '*пустой список*'
+            else:
+                text = 'Привет <b>{}</b>, я готов к работе с API'.format(username)
+            
             send_Message(chat_id, text = text) # отвечаем
 
         return jsonify(r) 
