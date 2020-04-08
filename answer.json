@@ -1,0 +1,21 @@
+{
+  "message": {
+    "text": "s",
+    "chat": {
+      "username": "zYoma_krd",
+      "id": 261552302,
+      "type": "private",
+      "first_name": "zYoma"
+    },
+    "date": 1586329828,
+    "from": {
+      "language_code": "ru",
+      "username": "zYoma_krd",
+      "id": 261552302,
+      "first_name": "zYoma",
+      "is_bot": false
+    },
+    "message_id": 28
+  },
+  "update_id": 429674793
+}
