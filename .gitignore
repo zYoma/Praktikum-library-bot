@@ -1,0 +1,18 @@
+.git/*
+env/
+venv/
+__pycache__/                                                                                                              *.py[cod]
+.idea
+*.env
+.DS_Store
+.AppleDouble
+.LSOverride
+*.sublime-project
+*.sublime-workspace 
+static/
+posts/static/
+media/
+db.sqlite3
+webhook_cert.pem
+webhook_pkey.pem
+answer.json
