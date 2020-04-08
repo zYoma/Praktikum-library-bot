@@ -1,21 +1,21 @@
 {
+  "update_id": 429674795,
   "message": {
     "text": "s",
+    "date": 1586332581,
+    "message_id": 32,
     "chat": {
+      "type": "private",
       "username": "zYoma_krd",
       "id": 261552302,
-      "type": "private",
       "first_name": "zYoma"
     },
-    "date": 1586330826,
     "from": {
-      "language_code": "ru",
       "username": "zYoma_krd",
+      "language_code": "ru",
       "id": 261552302,
       "first_name": "zYoma",
       "is_bot": false
-    },
-    "message_id": 30
-  },
-  "update_id": 429674794
+    }
+  }
 }
