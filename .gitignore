@@ -13,3 +13,6 @@ static/
 posts/static/
 media/
 db.sqlite3
+webhook_cert.pem
+webhook_pkey.pem
+answer.json
