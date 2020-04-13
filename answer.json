@@ -1,21 +1,21 @@
 {
+  "update_id": 429675132,
   "message": {
+    "text": "Все записи",
+    "date": 1586768589,
     "from": {
-      "is_bot": false,
-      "id": 261552302,
-      "username": "zYoma_krd",
       "language_code": "ru",
-      "first_name": "zYoma"
-    },
-    "date": 1586339681,
-    "message_id": 54,
-    "text": "x",
-    "chat": {
-      "type": "private",
       "id": 261552302,
       "username": "zYoma_krd",
-      "first_name": "zYoma"
+      "first_name": "zYoma",
+      "is_bot": false
+    },
+    "message_id": 535,
+    "chat": {
+      "id": 261552302,
+      "username": "zYoma_krd",
+      "first_name": "zYoma",
+      "type": "private"
     }
-  },
-  "update_id": 429674806
+  }
 }
